@@ -248,6 +248,60 @@ h1, h2, h3, h4 {
   border-radius: 2px;
 }
 
+/* ── Mobile icon buttons (phone + lang) — always visible in nav on mobile ── */
+.mob-nav-actions {
+  display: none;
+  align-items: center;
+  gap: 4px;
+}
+
+.mob-icon-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  background: none;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  color: var(--navy);
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+}
+.mob-icon-btn:hover,
+.mob-icon-btn[aria-expanded="true"] {
+  background: var(--bg-gray);
+  border-color: var(--blue);
+  color: var(--blue);
+}
+
+.mob-lang-wrap { position: relative; }
+
+.lang-popup {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-md);
+  padding: 6px;
+  min-width: 72px;
+  z-index: 300;
+}
+.lang-popup.is-open { display: flex; }
+.lang-popup .lang-btn {
+  width: 100%;
+  text-align: center;
+  padding: 8px 12px;
+  border-radius: var(--radius);
+}
+.lang-popup .lang-btn:hover { background: var(--bg-gray); }
+
 /* ── Mobile Menu ── */
 .mob-menu {
   display: none;
@@ -265,12 +319,8 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  padding-bottom: 24px;
-  margin-bottom: 0;
-  border-bottom: 1px solid var(--border);
 }
 
-/* Nav links only — does NOT affect the call button */
 .mob-menu ul a {
   font-size: 13px;
   font-weight: 700;
@@ -278,20 +328,6 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   color: var(--text);
   text-decoration: none;
-}
-
-/* Lang switcher inside mobile menu */
-.mob-menu .lang-switcher {
-  justify-content: center;
-  padding: 20px 0;
-  border-bottom: 1px solid var(--border);
-  margin-bottom: 24px;
-}
-
-/* Call button fills the menu width */
-.mob-menu .btn {
-  width: 100%;
-  justify-content: center;
 }
 
 /* ── Hero ── */
@@ -723,6 +759,7 @@ footer {
   .ftr-main           { grid-template-columns: 1fr 1fr; gap: 40px; }
   .nav-links, .nav-cta, #nav .lang-switcher { display: none; }
   .hamburger { display: flex; }
+  .mob-nav-actions { display: flex; }
 }
 
 @media (max-width: 640px) {

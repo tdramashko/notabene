@@ -41,17 +41,49 @@
   const mobileMenu = document.getElementById('mob-menu');
   let menuOpen = false;
 
+  function closeMobileMenu() {
+    menuOpen = false;
+    mobileMenu.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded', false);
+  }
+
   hamburger.addEventListener('click', () => {
     menuOpen = !menuOpen;
     mobileMenu.classList.toggle('is-open', menuOpen);
     hamburger.setAttribute('aria-expanded', menuOpen);
+    // close lang popup if open
+    closeLangPopup();
   });
 
   mobileMenu.querySelectorAll('a').forEach((a) =>
-    a.addEventListener('click', () => {
-      menuOpen = false;
-      mobileMenu.classList.remove('is-open');
-      hamburger.setAttribute('aria-expanded', false);
-    })
+    a.addEventListener('click', closeMobileMenu)
   );
+
+  /* ── Lang popup toggle ── */
+  const langToggle = document.getElementById('mob-lang-btn');
+  const langPopup  = document.getElementById('lang-popup');
+
+  function closeLangPopup() {
+    if (!langPopup) return;
+    langPopup.classList.remove('is-open');
+    langToggle.setAttribute('aria-expanded', false);
+  }
+
+  if (langToggle && langPopup) {
+    langToggle.addEventListener('click', (e) => {
+      e.stopPropagation();
+      const isOpen = langPopup.classList.toggle('is-open');
+      langToggle.setAttribute('aria-expanded', isOpen);
+      // close hamburger menu if open
+      if (isOpen) closeMobileMenu();
+    });
+
+    // Close popup after a language is selected
+    langPopup.querySelectorAll('.lang-btn').forEach((btn) =>
+      btn.addEventListener('click', closeLangPopup)
+    );
+
+    // Close popup when clicking anywhere outside
+    document.addEventListener('click', closeLangPopup);
+  }
 })();
