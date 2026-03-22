@@ -43,14 +43,14 @@
 
   hamburger.addEventListener('click', () => {
     menuOpen = !menuOpen;
-    mobileMenu.style.display = menuOpen ? 'block' : 'none';
+    mobileMenu.classList.toggle('is-open', menuOpen);
     hamburger.setAttribute('aria-expanded', menuOpen);
   });
 
   mobileMenu.querySelectorAll('a').forEach((a) =>
     a.addEventListener('click', () => {
       menuOpen = false;
-      mobileMenu.style.display = 'none';
+      mobileMenu.classList.remove('is-open');
       hamburger.setAttribute('aria-expanded', false);
     })
   );

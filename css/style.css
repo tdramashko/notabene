@@ -46,6 +46,9 @@
 /* ── Base ── */
 html { scroll-behavior: smooth; }
 
+/* Offset anchor scroll so fixed nav doesn't cover section headings */
+section[id] { scroll-margin-top: var(--nav-h); }
+
 body {
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI',
                Roboto, Helvetica, Arial, sans-serif;
@@ -230,6 +233,7 @@ nav.scrolled { box-shadow: var(--shadow); }
   border-bottom: 1px solid var(--border);
   padding: 32px var(--ph) 36px;
 }
+.mob-menu.is-open { display: block; }
 
 .mob-menu ul {
   list-style: none;
