@@ -265,16 +265,33 @@ h1, h2, h3, h4 {
   display: flex;
   flex-direction: column;
   gap: 20px;
-  margin-bottom: 28px;
+  padding-bottom: 24px;
+  margin-bottom: 0;
+  border-bottom: 1px solid var(--border);
 }
 
-.mob-menu a {
+/* Nav links only — does NOT affect the call button */
+.mob-menu ul a {
   font-size: 13px;
   font-weight: 700;
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: var(--text);
   text-decoration: none;
+}
+
+/* Lang switcher inside mobile menu */
+.mob-menu .lang-switcher {
+  justify-content: center;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 24px;
+}
+
+/* Call button fills the menu width */
+.mob-menu .btn {
+  width: 100%;
+  justify-content: center;
 }
 
 /* ── Hero ── */
