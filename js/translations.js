@@ -154,7 +154,7 @@ const TRANSLATIONS = {
       p9: 'We implement appropriate technical and organisational measures to protect your personal data against unauthorised access, loss, or disclosure. All staff with access to personal data are bound by professional confidentiality obligations.',
       h10: '10. Contact',
       p10_0: 'For any questions regarding this Privacy Policy or your personal data, please contact:',
-      p10_1: 'You also have the right to lodge a complaint with the Cyprus Commissioner for Personal Data Protection at www.dataprotection.gov.cy.',
+      p10_1: 'You also have the right to lodge a complaint with the Cyprus Commissioner for Personal Data Protection at <a href="https://www.dataprotection.gov.cy" target="_blank" rel="noopener noreferrer">www.dataprotection.gov.cy</a>.',
     },
     terms: {
       heroLabel:   'Legal',
@@ -344,7 +344,7 @@ const TRANSLATIONS = {
       p9: 'Εφαρμόζουμε κατάλληλα τεχνικά και οργανωτικά μέτρα για την προστασία των προσωπικών σας δεδομένων από μη εξουσιοδοτημένη πρόσβαση, απώλεια ή αποκάλυψη. Όλο το προσωπικό με πρόσβαση σε προσωπικά δεδομένα δεσμεύεται από επαγγελματικές υποχρεώσεις εχεμύθειας.',
       h10: '10. Επικοινωνία',
       p10_0: 'Για οποιαδήποτε ερωτήματα σχετικά με την παρούσα Πολιτική Απορρήτου ή τα προσωπικά σας δεδομένα, επικοινωνήστε με:',
-      p10_1: 'Έχετε επίσης το δικαίωμα να υποβάλετε καταγγελία στον Επίτροπο Προστασίας Δεδομένων Προσωπικού Χαρακτήρα της Κύπρου στο www.dataprotection.gov.cy.',
+      p10_1: 'Έχετε επίσης το δικαίωμα να υποβάλετε καταγγελία στον Επίτροπο Προστασίας Δεδομένων Προσωπικού Χαρακτήρα της Κύπρου στο <a href="https://www.dataprotection.gov.cy" target="_blank" rel="noopener noreferrer">www.dataprotection.gov.cy</a>.',
     },
     terms: {
       heroLabel:   'Νομικά',
@@ -534,7 +534,7 @@ const TRANSLATIONS = {
       p9: 'Мы применяем соответствующие технические и организационные меры для защиты ваших персональных данных от несанкционированного доступа, утраты или раскрытия. Весь персонал, имеющий доступ к персональным данным, связан обязательствами профессиональной конфиденциальности.',
       h10: '10. Контакты',
       p10_0: 'По вопросам настоящей Политики конфиденциальности или персональных данных обращайтесь:',
-      p10_1: 'Вы также имеете право подать жалобу Уполномоченному по защите персональных данных Кипра на сайте www.dataprotection.gov.cy.',
+      p10_1: 'Вы также имеете право подать жалобу Уполномоченному по защите персональных данных Кипра на сайте <a href="https://www.dataprotection.gov.cy" target="_blank" rel="noopener noreferrer">www.dataprotection.gov.cy</a>.',
     },
     terms: {
       heroLabel:   'Правовая информация',
