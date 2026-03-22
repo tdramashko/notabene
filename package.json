@@ -1,0 +1,22 @@
+{
+  "name": "notabene-tests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:desktop": "playwright test --project=chromium",
+    "test:mobile": "playwright test --project=mobile",
+    "test:i18n": "playwright test 03-i18n",
+    "test:content": "playwright test 02-content",
+    "test:legal": "playwright test 04-legal",
+    "report": "playwright show-report"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "typescript": "^5.9.3"
+  }
+}
