@@ -1,5 +1,7 @@
 import { defineConfig, devices } from '@playwright/test';
 
+const BASE_URL = process.env['BASE_URL'] ?? 'https://tdramashko.github.io/notabene';
+
 export default defineConfig({
   testDir: './tests',
   timeout: 30_000,
@@ -10,7 +12,7 @@ export default defineConfig({
   reporter: [['list'], ['html', { open: 'never' }]],
 
   use: {
-    baseURL: 'https://tdramashko.github.io/notabene',
+    baseURL: BASE_URL,
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
   },

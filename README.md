@@ -1,5 +1,7 @@
 # Notabene Accountants — Website
 
+[![CI](https://github.com/tdramashko/notabene/actions/workflows/test.yml/badge.svg)](https://github.com/tdramashko/notabene/actions/workflows/test.yml)
+
 Static marketing site for **Notabene Accountants (CY) Limited**, hosted on GitHub Pages.
 
 **Live:** https://tdramashko.github.io/notabene

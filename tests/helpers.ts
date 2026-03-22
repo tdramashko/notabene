@@ -1,6 +1,6 @@
 import { Page, expect } from '@playwright/test';
 
-export const SITE = 'https://tdramashko.github.io/notabene';
+export const SITE = process.env['BASE_URL'] ?? 'https://tdramashko.github.io/notabene';
 
 export const PHONE     = '+357 99 444 325';
 export const PHONE_RAW = '+35799444325';

@@ -70,20 +70,29 @@
   }
 
   if (langToggle && langPopup) {
+    function onOutsideClick() {
+      closeLangPopup();
+    }
+
     langToggle.addEventListener('click', (e) => {
       e.stopPropagation();
       const isOpen = langPopup.classList.toggle('is-open');
       langToggle.setAttribute('aria-expanded', isOpen);
-      // close hamburger menu if open
-      if (isOpen) closeMobileMenu();
+      if (isOpen) {
+        closeMobileMenu();
+        // Add outside-click listener only while popup is open
+        document.addEventListener('click', onOutsideClick);
+      } else {
+        document.removeEventListener('click', onOutsideClick);
+      }
     });
 
-    // Close popup after a language is selected
+    // Close popup after a language is selected, remove outside listener
     langPopup.querySelectorAll('.lang-btn').forEach((btn) =>
-      btn.addEventListener('click', closeLangPopup)
+      btn.addEventListener('click', () => {
+        closeLangPopup();
+        document.removeEventListener('click', onOutsideClick);
+      })
     );
-
-    // Close popup when clicking anywhere outside
-    document.addEventListener('click', closeLangPopup);
   }
 })();
