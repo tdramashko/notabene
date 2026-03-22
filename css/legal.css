@@ -1,0 +1,92 @@
+/* ============================================================
+   Notabene — Legal Pages Stylesheet
+   ============================================================ */
+
+.legal-hero {
+  padding-top: var(--nav-h);
+  background: var(--blue);
+  padding-bottom: 64px;
+}
+
+.legal-hero-inner {
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 64px var(--ph) 0;
+}
+
+.legal-hero p {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.45);
+  margin-bottom: 16px;
+}
+
+.legal-hero h1 {
+  font-size: clamp(32px, 4vw, 52px);
+  font-weight: 700;
+  color: var(--bg-white);
+  line-height: 1.1;
+}
+
+.legal-body {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px var(--ph);
+}
+
+.legal-body h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--navy);
+  margin: 48px 0 14px;
+}
+
+.legal-body h2:first-child { margin-top: 0; }
+
+.legal-body p {
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 16px;
+}
+
+.legal-body ul {
+  margin: 0 0 16px 20px;
+}
+
+.legal-body ul li {
+  font-size: 16px;
+  color: var(--text-mid);
+  line-height: 1.8;
+  margin-bottom: 8px;
+}
+
+.legal-meta {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-light);
+  margin-bottom: 48px;
+  padding-bottom: 48px;
+  border-bottom: 1px solid var(--border);
+  width: 100%;
+}
+
+.legal-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--blue);
+  text-decoration: none;
+  margin-bottom: 48px;
+  transition: opacity 0.2s;
+}
+.legal-back:hover { opacity: 0.7; }
