@@ -252,48 +252,51 @@ h1, h2, h3, h4 {
 .mob-nav-actions {
   display: none;
   align-items: center;
-  gap: 6px;
-  margin-left: auto;      /* push right, flush against hamburger */
-  margin-right: 4px;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 12px;
 }
 
-/* Phone — blue pill, primary CTA */
+/* Phone — pill button matching nav-cta style */
 .mob-phone-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
+  gap: 6px;
+  padding: 8px 14px;
   background: var(--blue);
   color: var(--bg-white);
   border: none;
-  border-radius: var(--radius);
+  border-radius: 99px;
+  font-family: inherit;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
   text-decoration: none;
+  white-space: nowrap;
   flex-shrink: 0;
   transition: background 0.2s;
 }
 .mob-phone-btn:hover { background: var(--blue-dark); }
 
-/* Globe — ghost icon, no border at rest */
+/* Globe — borderless ghost icon */
 .mob-icon-btn {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 32px;
+  height: 32px;
   background: none;
   border: none;
   border-radius: var(--radius);
   color: var(--text-mid);
   cursor: pointer;
   flex-shrink: 0;
-  transition: background 0.2s, color 0.2s;
+  padding: 0;
+  transition: color 0.2s;
 }
 .mob-icon-btn:hover,
-.mob-icon-btn[aria-expanded="true"] {
-  background: var(--bg-gray);
-  color: var(--blue);
-}
+.mob-icon-btn[aria-expanded="true"] { color: var(--blue); }
 
 .mob-lang-wrap { position: relative; }
 
@@ -301,24 +304,28 @@ h1, h2, h3, h4 {
   display: none;
   flex-direction: column;
   position: absolute;
-  top: calc(100% + 8px);
-  right: 0;
+  top: calc(100% + 6px);
+  right: -8px;
   background: var(--bg-white);
   border: 1px solid var(--border);
   border-radius: var(--radius);
   box-shadow: var(--shadow-md);
   padding: 4px;
-  min-width: 68px;
+  min-width: 64px;
   z-index: 300;
+  overflow: hidden;
 }
 .lang-popup.is-open { display: flex; }
 .lang-popup .lang-btn {
   width: 100%;
   text-align: center;
-  padding: 9px 12px;
-  border-radius: var(--radius);
+  padding: 9px 8px;
+  border-radius: 2px;
+  border: none;
+  color: var(--text-mid);
 }
-.lang-popup .lang-btn:hover { background: var(--bg-gray); }
+.lang-popup .lang-btn:hover  { background: var(--bg-gray); color: var(--blue); }
+.lang-popup .lang-btn.active { color: var(--blue); font-weight: 700; background: var(--bg-gray); }
 
 /* ── Mobile Menu ── */
 .mob-menu {
@@ -328,7 +335,8 @@ h1, h2, h3, h4 {
   z-index: 190;
   background: var(--bg-white);
   border-bottom: 1px solid var(--border);
-  padding: 32px var(--ph) 36px;
+  padding: 8px 0 16px;
+  box-shadow: var(--shadow);
 }
 .mob-menu.is-open { display: block; }
 
@@ -336,16 +344,22 @@ h1, h2, h3, h4 {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .mob-menu ul a {
+  display: block;
+  padding: 13px var(--ph);
   font-size: 13px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
+  font-weight: 600;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--text);
+  color: var(--text-mid);
   text-decoration: none;
+  transition: color 0.15s, background 0.15s;
+}
+.mob-menu ul a:hover {
+  color: var(--blue);
+  background: var(--bg-gray);
 }
 
 /* ── Hero ── */
