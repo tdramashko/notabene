@@ -23,12 +23,18 @@
     </a>
 
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#partners">Partners</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a href="#about"      data-i18n="nav.about">About</a></li>
+      <li><a href="#services"   data-i18n="nav.services">Services</a></li>
+      <li><a href="#industries" data-i18n="nav.industries">Industries</a></li>
+      <li><a href="#partners"   data-i18n="nav.partners">Partners</a></li>
+      <li><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
     </ul>
+
+    <div class="lang-switcher">
+      <button class="lang-btn active" data-lang="en">EN</button>
+      <button class="lang-btn" data-lang="el">ΕΛ</button>
+      <button class="lang-btn" data-lang="ru">RU</button>
+    </div>
 
     <a href="tel:+35799444325" class="nav-cta">
       <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true">
@@ -46,34 +52,39 @@
 <!-- ── Mobile Menu ── -->
 <div class="mob-menu" id="mob-menu" role="dialog" aria-label="Mobile navigation">
   <ul>
-    <li><a href="#about">About</a></li>
-    <li><a href="#services">Services</a></li>
-    <li><a href="#industries">Industries</a></li>
-    <li><a href="#partners">Partners</a></li>
-    <li><a href="#contact">Contact</a></li>
+    <li><a href="#about"      data-i18n="nav.about">About</a></li>
+    <li><a href="#services"   data-i18n="nav.services">Services</a></li>
+    <li><a href="#industries" data-i18n="nav.industries">Industries</a></li>
+    <li><a href="#partners"   data-i18n="nav.partners">Partners</a></li>
+    <li><a href="#contact"    data-i18n="nav.contact">Contact</a></li>
   </ul>
-  <a href="tel:+35799444325" class="btn btn-fill">Call +357 99 444 325</a>
+  <div class="lang-switcher" style="margin-bottom: 20px;">
+    <button class="lang-btn active" data-lang="en">EN</button>
+    <button class="lang-btn" data-lang="el">ΕΛ</button>
+    <button class="lang-btn" data-lang="ru">RU</button>
+  </div>
+  <a href="tel:+35799444325" class="btn btn-fill">+357 99 444 325</a>
 </div>
 
 <!-- ── Hero ── -->
 <section id="hero">
   <div class="hero-inner">
     <div class="hero-left fade">
-      <p class="hero-eyebrow">Limassol · Cyprus</p>
-      <h1 class="hero-title">Audit &amp; Tax<br>Advisory<br><em>in Cyprus</em></h1>
-      <p class="hero-sub">Independent audit and tax services for businesses in Cyprus and internationally — delivered with precision and integrity.</p>
+      <p class="hero-eyebrow" data-i18n="hero.eyebrow">Limassol · Cyprus</p>
+      <h1 class="hero-title" data-i18n-html="hero.title">Audit &amp; Tax<br>Advisory<br><em>in Cyprus</em></h1>
+      <p class="hero-sub" data-i18n="hero.subtitle">Independent audit and tax services for businesses in Cyprus and internationally — delivered with precision and integrity.</p>
       <div class="hero-btns">
         <a href="tel:+35799444325" class="btn btn-white">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
           </svg>
-          Call Us
+          <span data-i18n="hero.btnCall">Call Us</span>
         </a>
         <a href="https://wa.me/35799444325" class="btn btn-outline-white" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
           </svg>
-          WhatsApp
+          <span data-i18n="hero.btnWa">WhatsApp</span>
         </a>
       </div>
     </div>
@@ -82,15 +93,15 @@
       <div class="hero-stat-row">
         <div class="hero-stat">
           <div class="stat-val">ICPAC</div>
-          <div class="stat-lbl">Licensed Firm</div>
+          <div class="stat-lbl" data-i18n="hero.stat1">Licensed Firm</div>
         </div>
         <div class="hero-stat">
           <div class="stat-val">ACCA</div>
-          <div class="stat-lbl">Qualified Partners</div>
+          <div class="stat-lbl" data-i18n="hero.stat2">Qualified Partners</div>
         </div>
         <div class="hero-stat">
           <div class="stat-val">27<sup>+</sup></div>
-          <div class="stat-lbl">Combined Years Experience</div>
+          <div class="stat-lbl" data-i18n="hero.stat3">Combined Years Experience</div>
         </div>
       </div>
     </div>
@@ -100,10 +111,10 @@
 <!-- ── Trust Bar ── -->
 <div id="trust">
   <div class="trust-inner">
-    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>ICPAC Licensed Audit Firm</div>
-    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>ACCA Qualified Partners</div>
-    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>27+ Years Combined Experience</div>
-    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span>Limassol, Cyprus</div>
+    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span><span data-i18n="trust.t1">ICPAC Licensed Audit Firm</span></div>
+    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span><span data-i18n="trust.t2">ACCA Qualified Partners</span></div>
+    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span><span data-i18n="trust.t3">27+ Years Combined Experience</span></div>
+    <div class="trust-item"><span class="trust-dot" aria-hidden="true"></span><span data-i18n="trust.t4">Limassol, Cyprus</span></div>
   </div>
 </div>
 
@@ -111,16 +122,16 @@
 <section id="about">
   <div class="about-grid">
     <div class="about-text fade">
-      <span class="label">About Us</span>
-      <h2>Independent expertise.<br>Practical results.</h2>
-      <p>Notabene was founded to provide high-quality, independent audit and tax services to businesses in Cyprus and internationally.</p>
-      <p>Our team comprises qualified accountants and auditors who are members of ACCA and ICPAC. We hold practising certificates for audit and assurance services.</p>
-      <p>We combine technical expertise with a practical, client-focused approach — whether you are a local SME, an international group, or a company navigating the regulatory landscape.</p>
+      <span class="label" data-i18n="about.label">About Us</span>
+      <h2 data-i18n-html="about.heading">Independent expertise.<br>Practical results.</h2>
+      <p data-i18n="about.p1">Notabene was founded to provide high-quality, independent audit and tax services to businesses in Cyprus and internationally.</p>
+      <p data-i18n="about.p2">Our team comprises qualified accountants and auditors who are members of ACCA and ICPAC. We hold practising certificates for audit and assurance services.</p>
+      <p data-i18n="about.p3">We combine technical expertise with a practical, client-focused approach — whether you are a local SME, an international group, or a company navigating the regulatory landscape.</p>
     </div>
     <div class="credentials fade d1">
-      <div class="cred"><span class="cred-text">ICPAC Licensed</span></div>
-      <div class="cred"><span class="cred-text">ACCA Qualified</span></div>
-      <div class="cred"><span class="cred-text">27+ Years Combined Experience</span></div>
+      <div class="cred"><span class="cred-text" data-i18n="about.cred1">ICPAC Licensed</span></div>
+      <div class="cred"><span class="cred-text" data-i18n="about.cred2">ACCA Qualified</span></div>
+      <div class="cred"><span class="cred-text" data-i18n="about.cred3">27+ Years Combined Experience</span></div>
     </div>
   </div>
 </section>
@@ -128,29 +139,29 @@
 <!-- ── Services ── -->
 <section id="services">
   <div class="section-hd fade">
-    <span class="label">Our Services</span>
-    <h2>Comprehensive professional services</h2>
+    <span class="label" data-i18n="services.label">Our Services</span>
+    <h2 data-i18n="services.heading">Comprehensive professional services</h2>
   </div>
   <div class="svc-grid">
     <article class="svc-card fade">
       <span class="svc-num">01</span>
-      <h3>Audit &amp; Assurance</h3>
-      <p class="svc-desc">Providing confidence in financial information in accordance with ISA standards and Cyprus legislation.</p>
+      <h3 data-i18n="services.s1title">Audit &amp; Assurance</h3>
+      <p class="svc-desc" data-i18n="services.s1desc">Providing confidence in financial information in accordance with ISA standards and Cyprus legislation.</p>
       <ul class="svc-list">
-        <li>Statutory Audits</li>
-        <li>IFRS Reporting</li>
-        <li>Internal Audit</li>
-        <li>Due Diligence</li>
-        <li>Risk Assessment</li>
+        <li data-i18n="services.s1li1">Statutory Audits</li>
+        <li data-i18n="services.s1li2">IFRS Reporting</li>
+        <li data-i18n="services.s1li3">Internal Audit</li>
+        <li data-i18n="services.s1li4">Due Diligence</li>
+        <li data-i18n="services.s1li5">Risk Assessment</li>
       </ul>
     </article>
     <article class="svc-card fade d1">
       <span class="svc-num">02</span>
-      <h3>Tax Services</h3>
-      <p class="svc-desc">Helping clients stay compliant while optimising their tax position across jurisdictions.</p>
+      <h3 data-i18n="services.s2title">Tax Services</h3>
+      <p class="svc-desc" data-i18n="services.s2desc">Helping clients stay compliant while optimising their tax position across jurisdictions.</p>
       <ul class="svc-list">
-        <li>Corporate Tax Compliance</li>
-        <li>Tax Planning</li>
+        <li data-i18n="services.s2li1">Corporate Tax Compliance</li>
+        <li data-i18n="services.s2li2">Tax Planning</li>
       </ul>
     </article>
   </div>
@@ -160,17 +171,17 @@
 <section id="industries">
   <div class="container">
     <div class="section-hd fade" style="margin-left:0;">
-      <span class="label">Industries We Serve</span>
-      <h2>Sector expertise across key industries</h2>
+      <span class="label" data-i18n="industries.label">Industries We Serve</span>
+      <h2 data-i18n="industries.heading">Sector expertise across key industries</h2>
     </div>
     <div class="ind-grid">
-      <div class="ind-item fade"><span class="ind-num">01</span><span class="ind-name">Real Estate</span></div>
-      <div class="ind-item fade d1"><span class="ind-num">02</span><span class="ind-name">Construction</span></div>
-      <div class="ind-item fade d2"><span class="ind-num">03</span><span class="ind-name">Shipping</span></div>
-      <div class="ind-item fade d3"><span class="ind-num">04</span><span class="ind-name">Technology</span></div>
-      <div class="ind-item fade"><span class="ind-num">05</span><span class="ind-name">Investment Funds</span></div>
-      <div class="ind-item fade d1"><span class="ind-num">06</span><span class="ind-name">SMEs</span></div>
-      <div class="ind-item fade d2"><span class="ind-num">07</span><span class="ind-name">International Groups</span></div>
+      <div class="ind-item fade"><span class="ind-num">01</span><span class="ind-name" data-i18n="industries.i1">Real Estate</span></div>
+      <div class="ind-item fade d1"><span class="ind-num">02</span><span class="ind-name" data-i18n="industries.i2">Construction</span></div>
+      <div class="ind-item fade d2"><span class="ind-num">03</span><span class="ind-name" data-i18n="industries.i3">Shipping</span></div>
+      <div class="ind-item fade d3"><span class="ind-num">04</span><span class="ind-name" data-i18n="industries.i4">Technology</span></div>
+      <div class="ind-item fade"><span class="ind-num">05</span><span class="ind-name" data-i18n="industries.i5">Investment Funds</span></div>
+      <div class="ind-item fade d1"><span class="ind-num">06</span><span class="ind-name" data-i18n="industries.i6">SMEs</span></div>
+      <div class="ind-item fade d2"><span class="ind-num">07</span><span class="ind-name" data-i18n="industries.i7">International Groups</span></div>
       <div class="ind-item empty fade d3" aria-hidden="true"></div>
     </div>
   </div>
@@ -179,18 +190,18 @@
 <!-- ── Partners ── -->
 <section id="partners">
   <div class="section-hd fade container">
-    <span class="label">Our Partners</span>
-    <h2>Experienced leadership</h2>
+    <span class="label" data-i18n="partners.label">Our Partners</span>
+    <h2 data-i18n="partners.heading">Experienced leadership</h2>
   </div>
   <div class="prt-grid container">
     <article class="prt-card fade">
       <div class="prt-photo-wrap">
         <img src="assets/images/andreasrousos.jpg" alt="Andreas Rousos" class="prt-photo" style="object-position: center 18%;">
       </div>
-      <p class="prt-role">Partner · ACCA · ICPAC</p>
+      <p class="prt-role" data-i18n="partners.p1role">Partner · ACCA · ICPAC</p>
       <h3 class="prt-name">Andreas Rousos</h3>
-      <p class="prt-exp">17 Years of Experience</p>
-      <p class="prt-bio">Andreas is a qualified accountant and member of ACCA and ICPAC. Over 17 years of professional practice, he has developed deep expertise across real estate, construction, shipping, and investment funds. His work spans statutory audits, IFRS reporting, tax compliance, and complex advisory engagements for both local and international clients.</p>
+      <p class="prt-exp" data-i18n="partners.p1exp">17 Years of Experience</p>
+      <p class="prt-bio" data-i18n="partners.p1bio">Andreas is a qualified accountant and member of ACCA and ICPAC. Over 17 years of professional practice, he has developed deep expertise across real estate, construction, shipping, and investment funds. His work spans statutory audits, IFRS reporting, tax compliance, and complex advisory engagements for both local and international clients.</p>
       <div class="prt-badges">
         <span class="prt-badge">ACCA</span>
         <span class="prt-badge">ICPAC</span>
@@ -201,10 +212,10 @@
       <div class="prt-photo-wrap">
         <img src="assets/images/mariospanagiotou.jpg" alt="Marios Panagiotou" class="prt-photo" style="object-position: center 12%;">
       </div>
-      <p class="prt-role">Partner · ACCA · ICPAC</p>
+      <p class="prt-role" data-i18n="partners.p2role">Partner · ACCA · ICPAC</p>
       <h3 class="prt-name">Marios Panagiotou</h3>
-      <p class="prt-exp">10 Years of Experience</p>
-      <p class="prt-bio">Marios is a qualified accountant and member of ACCA and ICPAC. With 10 years of focused professional experience, he brings rigorous analytical discipline to statutory audits, financial reporting, tax compliance, and internal controls. His detail-oriented methodology ensures precision across every client engagement.</p>
+      <p class="prt-exp" data-i18n="partners.p2exp">10 Years of Experience</p>
+      <p class="prt-bio" data-i18n="partners.p2bio">Marios is a qualified accountant and member of ACCA and ICPAC. With 10 years of focused professional experience, he brings rigorous analytical discipline to statutory audits, financial reporting, tax compliance, and internal controls. His detail-oriented methodology ensures precision across every client engagement.</p>
       <div class="prt-badges">
         <span class="prt-badge">ACCA</span>
         <span class="prt-badge">ICPAC</span>
@@ -217,40 +228,40 @@
 <section id="contact">
   <div class="contact-grid">
     <div class="fade">
-      <span class="label">Contact</span>
+      <span class="label" data-i18n="contact.label">Contact</span>
       <div class="contact-cta">
-        <h2>Ready to discuss<br>your needs?</h2>
-        <p>Reach us directly by phone or WhatsApp — we respond promptly to all enquiries.</p>
+        <h2 data-i18n-html="contact.heading">Ready to discuss<br>your needs?</h2>
+        <p data-i18n="contact.subtext">Reach us directly by phone or WhatsApp — we respond promptly to all enquiries.</p>
       </div>
       <div class="contact-actions">
         <a href="tel:+35799444325" class="btn btn-fill">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 8.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/>
           </svg>
-          Call +357 99 444 325
+          <span data-i18n="contact.btnCall">Call +357 99 444 325</span>
         </a>
         <a href="https://wa.me/35799444325" class="btn btn-outline" target="_blank" rel="noopener noreferrer">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
           </svg>
-          WhatsApp
+          <span data-i18n="contact.btnWa">WhatsApp</span>
         </a>
         <a href="mailto:office@notabene.cy" class="btn btn-outline">
           <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
             <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
             <polyline points="22,6 12,13 2,6"/>
           </svg>
-          office@notabene.cy
+          <span data-i18n="contact.btnEmail">office@notabene.cy</span>
         </a>
       </div>
     </div>
 
     <div class="details fade d1">
-      <div class="detail"><span class="detail-k">Phone</span><span class="detail-v"><a href="tel:+35799444325">+357 99 444 325</a></span></div>
-      <div class="detail"><span class="detail-k">WhatsApp</span><span class="detail-v"><a href="https://wa.me/35799444325" target="_blank" rel="noopener noreferrer">+357 99 444 325</a></span></div>
-      <div class="detail"><span class="detail-k">Email</span><span class="detail-v"><a href="mailto:office@notabene.cy">office@notabene.cy</a></span></div>
-      <div class="detail"><span class="detail-k">Address</span><span class="detail-v">Sokratous 2, Mesa Geitonia,<br>4006 Limassol, Cyprus</span></div>
-      <div class="detail"><span class="detail-k">Hours</span><span class="detail-v">Monday – Friday<br>9:00 – 18:00</span></div>
+      <div class="detail"><span class="detail-k" data-i18n="contact.kPhone">Phone</span><span class="detail-v"><a href="tel:+35799444325">+357 99 444 325</a></span></div>
+      <div class="detail"><span class="detail-k" data-i18n="contact.kWhatsapp">WhatsApp</span><span class="detail-v"><a href="https://wa.me/35799444325" target="_blank" rel="noopener noreferrer">+357 99 444 325</a></span></div>
+      <div class="detail"><span class="detail-k" data-i18n="contact.kEmail">Email</span><span class="detail-v"><a href="mailto:office@notabene.cy">office@notabene.cy</a></span></div>
+      <div class="detail"><span class="detail-k" data-i18n="contact.kAddress">Address</span><span class="detail-v" data-i18n-html="contact.vAddress">Sokratous 2, Mesa Geitonia,<br>4006 Limassol, Cyprus</span></div>
+      <div class="detail"><span class="detail-k" data-i18n="contact.kHours">Hours</span><span class="detail-v" data-i18n-html="contact.vHours">Monday – Friday<br>9:00 – 18:00</span></div>
     </div>
   </div>
 </section>
@@ -270,40 +281,42 @@
     </div>
 
     <nav aria-label="Footer navigation">
-      <p class="ftr-col-h">Navigation</p>
+      <p class="ftr-col-h" data-i18n="footer.navLabel">Navigation</p>
       <ul class="ftr-links">
-        <li><a href="#about">About Us</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#industries">Industries</a></li>
-        <li><a href="#partners">Partners</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about"      data-i18n="footer.about">About Us</a></li>
+        <li><a href="#services"   data-i18n="footer.services">Services</a></li>
+        <li><a href="#industries" data-i18n="footer.industries">Industries</a></li>
+        <li><a href="#partners"   data-i18n="footer.partners">Partners</a></li>
+        <li><a href="#contact"    data-i18n="footer.contact">Contact</a></li>
       </ul>
     </nav>
 
     <div>
-      <p class="ftr-col-h">Contact</p>
+      <p class="ftr-col-h" data-i18n="footer.contactLabel">Contact</p>
       <ul class="ftr-links">
         <li><a href="tel:+35799444325">+357 99 444 325</a></li>
         <li><a href="mailto:office@notabene.cy">office@notabene.cy</a></li>
       </ul>
       <div style="margin-top:28px">
-        <p class="ftr-col-h">Legal</p>
+        <p class="ftr-col-h" data-i18n="footer.legalLabel">Legal</p>
         <ul class="ftr-links">
-          <li><a href="privacy-policy.html">Privacy Policy</a></li>
-          <li><a href="terms.html">Terms &amp; Conditions</a></li>
-          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
+          <li><a href="privacy-policy.html" data-i18n="footer.privacy">Privacy Policy</a></li>
+          <li><a href="terms.html"          data-i18n="footer.terms">Terms &amp; Conditions</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" data-i18n="footer.linkedin">LinkedIn ↗</a></li>
         </ul>
       </div>
     </div>
   </div>
 
   <div class="ftr-bottom">
-    <span>© 2026 Notabene Accountants (CY) Limited. All rights reserved.</span>
-    <span>Audit · Tax · Advisory</span>
+    <span data-i18n="footer.copyright">© 2026 Notabene Accountants (CY) Limited. All rights reserved.</span>
+    <span data-i18n="footer.tagline">Audit · Tax · Advisory</span>
   </div>
 </footer>
 
-<!-- Scripts -->
+<!-- Scripts — translations must load before i18n engine -->
+<script src="js/translations.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>
